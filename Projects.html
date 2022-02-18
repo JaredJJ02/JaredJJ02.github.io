@@ -34,7 +34,7 @@
     <div class="ChapterSelect">
         <div>
             <h2>Links</h2>
-            <a href="#Project_1">Project 1</a>
+            <a href="#Sonar_Servo">Sonar Servo</a>
             <hr>
             <a href="#Project_2">Project 2</a>
             <hr>
@@ -56,8 +56,21 @@
     
     <div class="TextContainer">
         <div class="TextParagraph">
-            <h2 id="Project_1">Project 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolorem dolores veniam, molestias animi ipsa sunt corporis nostrum nesciunt iusto, nobis sequi iure odit temporibus minima porro quos aspernatur ab?</p>
+            <h2 id="Sonar_Servo">Sonar Servo</h2>
+            <p>A project where I created a 180 degree sonar system using a sonar sensor mounted to a servo. This was done using an Arduino Uno. Below is the wiring used for this project</p>
+            <img src="placeholder.png" alt="Sonar Circuit">
+            <p>After taping the sonar sensor to the 9g servo, I secured the servo to the table such that it does not fall over when it begins to rotate. It was now time to write the code for the project. The first hurdle was how to pull distance data from the sonar sensor. One google search later, this is the code I ended up with.</p>
+            <img src="placeholder.png" alt="SonarDistCode">
+            <p>The next task was to pass this data through the serial port and into my PC, so that I could show the data visually on the screen</p>
+            <img src="placeholder.png" alt="1D Sonar Image in Processing">
+            <p>The code to do this is as follows:</p>
+            <img src="placeholder.png" alt="1D Sonar Image Code">
+            <p>Now it was time to make the servo spin. The servo is coded to move in a sweeping motion from 0 degrees to 180 degrees, and then return in the other direction, back to 0 degrees. The position of the servo is then sent through the same serial port as the distance data. These two values can then be separated by the processing code. This is done by moving each value recieved into a different array, depending on whether it is the is sent through on an even or odd clock cycle.</p>
+            <img src="placeholder.png" alt="Sonar data sender & reciever code">
+            <p>The only thing left to do now was to graph the data sent through to processing. This was done by shifting the origin to the upper middle of the screen, and using some basic trigonometry to convert the polar coordinates of the arduino's circuit to the cartesian system used by processing. After this was complete I took the time to make a quick radar-looking background. What you see below is the final result.</p>
+            <img src="placeholder.png" alt="Complete Sonar System">
+            <p>And next, a video of the contraption working as intended:</p>
+            <img src="placeholder.png" alt="Video of Sonar">
         </div>
         <div class="PxGap"></div>
         <div class="TextParagraph">

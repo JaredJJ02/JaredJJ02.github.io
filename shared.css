@@ -129,6 +129,10 @@ h2::before {
 .TextParagraph p{
     padding-bottom: 20px;
 }
+.TextParagraph img{
+    width: 70%;
+    padding-bottom: 20px;
+}
 .TextContainer{
     margin: 0 auto;
     display: table;
@@ -169,4 +173,3 @@ ion-icon.SocialMediaLogo:hover{
         font-size: 20px;
     }
 }
-    

@@ -161,4 +161,15 @@ ion-icon.SocialMediaLogo:hover{
         visibility:hidden;
     }
 }
+@media(max-width: 400px){
+    .navBar{
+        height: 35px;
+    }
+    .navBarLinks a{
+        font-size: 14px;
+    }
+    .navBarLinks p{
+        font-size: 14px;
+    }
+}
     

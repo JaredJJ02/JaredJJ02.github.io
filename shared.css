@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    
+    text-decoration: none;
 }
 body{
     background-color: #1c1c1c;
     font-family: 'Nunito', sans-serif;
-
 }
 .navBar{
     position: fixed;
@@ -104,4 +103,15 @@ body{
 }
 .PxGap{
     padding-bottom: 25px;
+}
+.BigGap{
+    padding-bottom: 500px;
+}
+ion-icon.SocialMediaLogo{
+    color: #ffffff;
+    font-size: 40px;
+    padding: 5px;
+}
+ion-icon.SocialMediaLogo:hover{
+    color: #c2c2c2
 }

@@ -14,7 +14,7 @@ body{
     height: 70px;
 }
 .navBarMiddle{
-   width: 1000px;
+   max-width: 1000px;
    height: 100%;
    display: block;
    margin: 0 auto;
@@ -60,7 +60,7 @@ body{
     
 }
 .TextParagraph{
-    width: 1000px;
+    max-width: 1000px;
     font-size: 24px;
     color: #ffffff;
    
@@ -91,7 +91,6 @@ body{
 }
 .TextContainer{
     margin: 0 auto;
-    width: 90%;
     display: table;
     justify-content: left;
     align-items: left;

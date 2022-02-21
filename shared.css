@@ -37,6 +37,8 @@ h2::before {
     height: 100%;
     width: auto;
     float: left;
+    position: absolute;
+
 }
 .navBarLogo img{
     height: 100%;
@@ -166,10 +168,10 @@ ion-icon.SocialMediaLogo:hover{
     }
 }
 @media(max-width: 500px){
-     .navBarLinks a{
-        font-size: 8px;
-    }
-    .navBarLinks p{
-        font-size: 8px;
-    }
+    .navBarLinks a{
+       font-size: 20px;
+   }
+   .navBarLinks p{
+       font-size: 20px;
+   }
 }
